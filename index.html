@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Richard Confort</title>
+    <script>
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</head>
+<body id="body">
+    <nav>
+        <div id="tp">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="dropdown">	
+        <img class="dropbtn" src="images/home.png">
+            <div class="dropdown-content">
+                <a href="#V">Describtion</a>
+                <a href="#Q">Quick links</a>
+                <a href="#footer">Footer</a>
+            </div>
+        </div>
+            <a href="findex.html">
+                <figure>
+                    <img id="GG" src="images/fr.png">
+                    <figcaption id="FG">Fran&#231;ais</figcaption>
+                </figure>
+            </a>
+        <div id="P">
+            <a href="contact.html">Contact us</a>
+            <a href="about.html">Our products</a>
+            <b>Home</b>
+        </div>
+    </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-26_17-25-10.jpg" style="width:100%">
+            <div class="text">Your comfort, our satisfaction.</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-26_17-29-33.jpg" style="width:100%">
+            <div class="text">Your comfort, our satisfaction.</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-25_18-57-56.jpg" style="width:100%">
+            <div class="text">Your comfort, our satisfaction.</div>
+        </div>
+    </div><br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+<script>
+let slideIndex = 0;
+showSlides();
+</script>
+    <div id="cntr">
+	<div id="V">
+	<div id="dix">
+		<p>Sales of furniture, household equipments and electronics at affordable prices.</p>
+	</div>
+	<img id="U" src="images/photo_2022-08-26_17-23-00.jpg">
+	<div id="onze">
+		<p>Make a choice for comfort and excellence. Richard Confort International SARL was created Mr. Ngnintedem Djumou with the goal of providing comfortable and quality household equipments to his customers. He succeeded in this mission and continues to guarantee his customers premium quality goods. Our motto is <b>Richard Confort, the choice of comfort and excellence.</b></p>
+	</div>
+	</div>
+    <div id="Q">
+        <h1>Quick Links</h1>
+    <div id="R">
+        <div id="R1">
+            <p><b>Our electronic appliances are just as you want them</b></p>
+            <a href="about.html"><button>Learn more...</button></a>
+        </div>
+        <div id="R2">
+            <p><b>We also have quality furniture to suit your needs</b></p>
+            <a href="about.html"><button>Learn more...</button></a>
+        </div>
+        <div id="R3">
+            <p><b>Check out the lights we have here</b></p>
+            <a href="about.html"><button>Learn more...</button></a>
+        </div>
+        <div id="R4">
+            <p><b>We can equip your kitchens for you too</b></p>
+            <a href="about.html"><button>Learn more...</button></a>
+        </div>
+        <div id="R5">
+            <p><b>Classic decorations are also available here for you</b></p>
+            <a href="about.html"><button>Learn more...</button></a>
+        </div>
+        <div id="R6">
+            <p><b>There are just a lot more you can find here</b></p>
+            <a href="about.html"><button >Learn more...</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+	<div class="ups">
+		<a href="#"><span><img src="images/up.png" id="pt"></span>Return to top</a>
+	</div>
+    <footer id="footer">
+        <div id="ZZ">
+            <b>Sections</b><br><br>
+            <b><span><img id="pt" src="images/home.png"></span> Home</b><br><br>
+            <a href="about.html"><span><img id="pt" src="images/info.png"></span> Our products</a><br><br>
+            <a href="contact.html"><span><img id="pt" src="images/phone.png"></span> Contact us</a><br><br>
+            <a href="#"><span><img id="pt" src="images/up.png"></span> Return to the top</a><br>
+        </div>
+        <div id="ZY">
+            <b>Contact us</b><br><br>
+            <a href="contact.html">Fill the form here to get easily contact us or call us</a><br><br>
+            <a href="https://wa.me/237683688053" target="_blank"><span><img id="pt" src="images/whatsapp.png"></span> +237 683 68 80 53</a><br><br>
+            <a href="mailto:ngnintedem@richardconfort.com">ngnintedem@richardconfort.com</a>
+        </div>
+        <div id="ZX">
+            <b>Products</b><br><br>
+            <a href="about.html#el">Electronics</a><br><br>
+            <a href="about.html#fur">Furniture</a><br><br>
+            <a href="about.html#lig">Lighting</a><br><br>
+            <a href="about.html">Kitchen utensils</a><br><br>
+            <a href="about.html">Decoration</a><br><br>
+            <a href="about.html">Other items</a><br><br>
+        </div>
+        <div>
+            <a target="_blank" href="https://test.blumdesk.com"><img style="height: 100px;" src="images/blumlogo.png" alt="Blumdesk's logo">
+            <p>Copyright 2020 Blumdesk &copy;</p></a>
+        </div>
+    </footer>
+</body>
+</html>

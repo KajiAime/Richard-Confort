@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Richard Confort</title>
+    <script>
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</head>
+<body id="body">
+    <nav>
+        <div id="tp">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="dropdown">
+        <img class="dropbtn" src="images/home.png">
+            <div class="dropdown-content">
+                <a href="#V">Description</a>
+                <a href="#Q">Liens rapides</a>
+                <a href="#footer">Pied de page</a>
+            </div>
+        </div>
+            <a href="index.html">
+                <figure>
+                    <img id="GG" src="images/uk.png">
+                    <figcaption id="FG">English</figcaption>
+                </figure>
+            </a>
+        <div id="FREE">
+            <a href="fcontact.html">Contactez-nous</a>
+            <a href="fabout.html">Nos produits</a>
+            <b>Accueil</b>
+        </div> 
+    </nav>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-26_17-25-10.jpg" style="width:100%">
+            <div class="text">Votre confort, notre satisfaction.</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-26_17-29-33.jpg" style="width:100%">
+            <div class="text">Votre confort, notre satisfaction.</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="images/photo_2022-08-25_18-57-56.jpg" style="width:100%">
+            <div class="text">Votre confort, notre satisfaction.</div>
+        </div>
+    </div><br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+<script>
+let slideIndex = 0;
+showSlides();
+</script>
+<div id="cntr">
+<div id="V">
+<div id="dix">
+<p style="font-size: 15px;">Vente de meubles, d'équipements ménagers et d'électronique à des prix abordables.</p>
+</div>
+<img id="U" src="images/photo_2022-08-26_17-23-00.jpg">
+<div id="onze">
+<p>Faites le choix du confort et de l'excellence. Richard Confort International SARL a été créé Monsieur Ngnintedem Djumou dans le but de fournir des équipements ménagers confortables et de qualité à ses clients. Il a réussi cette mission et continue de garantir à ses clients des produits de première qualité. Notre devise est <b>Richard Confort, le choix du confort et de l'excellence.</b></p>
+</div>
+</div>
+    <div id="Q">
+        <h1>Liens rapides</h1>
+    <div id="R">
+        <div id="R1">
+            <p><b>Nos appareils électroniques sont exactement comme vous les voulez</b></p>
+            <a href="about.html"><button>En savoir plus...</button></a>
+        </div>
+        <div id="R2">
+            <p><b>Nous avons également des meubles de qualité pour répondre à vos besoins</b></p>
+            <a href="about.html"><button>En savoir plus...</button></a>
+        </div>
+        <div id="R3">
+            <p><b>Découvrez les lumières que nous avons ici</b></p>
+            <a href="about.html"><button>En savoir plus...</button></a>
+        </div>
+        <div id="R4">
+            <p><b>Nous pouvons également équiper vos cuisines pour vous</b></p>
+            <a href="about.html"><button>En savoir plus...</button></a>
+        </div>
+        <div id="R5">
+            <p><b>Des décorations classiques sont également disponibles ici pour vous</b></p>
+            <a href="about.html"><button>En savoir plus...</button></a>
+        </div>
+        <div id="R6">
+            <p><b>Il y a juste beaucoup plus que vous pouvez trouver ici</b></p>
+            <a href="about.html"><button >En savoir plus...</button></a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="upsf">
+		<a href="#"><span><img src="images/up.png" id="pt"></span>Retourner en haut</a>
+	</div>
+    <footer id="footer">
+        <div id="ZZ">
+            <b>Sections</b><br><br>
+            <b><span><img id="pt" src="images/home.png"></span> Accueil</b><br><br>
+            <a href="fabout.html"><span><img id="pt" src="images/info.png"></span> Nos produits</a><br><br>
+            <a href="fcontact.html"><span><img id="pt" src="images/phone.png"></span> Contactez-nous</a><br><br>
+            <a href="#"><span><img id="pt" src="images/up.png"></span> Retour en haut</a><br>
+        </div>
+        <div id="ZY">
+            <b>Contactez-nous</b><br><br>
+            <a href="fcontact.html">Remplissez le formulaire ici pour nous contacter ou nous appeler facilement</a><br><br>
+            <a href="https://wa.me/237683688053" target="_blank"><span><img id="pt" src="images/whatsapp.png"></span> +237 683 68 80 53</a><br><br>
+            <a href="mailto:ngnintedem@richarardconfort.com">ngnintedem@richardconfort.com</a>
+        </div>
+        <div id="ZX">
+             <b>Produits</b><br><br>
+            <a href="fabout.html#el">Électronique</a><br><br>
+            <a href="fabout.html#fur">Meubles</a><br><br>
+            <a href="fabout.html#lig">Éclairage</a><br><br>
+            <a href="fabout.html#kit">Ustensiles de cuisine</a><br><br>
+            <a href="fabout.html#dec">Décoration</a><br><br>
+            <a href="fabout.html#oth">Autres articles</a><br><br>
+        </div>
+        <div>
+            <a target="_blank" href="https://test.blumdesk.com"><img style="height: 100px;" src="images/blumlogo.png" alt="Logo de Blumdesk">
+            <p>Copyright 2020 Blumdesk &copy;</p></a>
+        </div>
+    </footer>
+</body>
+</html>
