@@ -34,7 +34,7 @@
     <div id="hzq">
         <p>Please, leave us a message below to pass a command, to tell us if you have problems, or for any other feedback.</p>
     <div id="form">
-    <form action="hand.php" method="post">
+    <form action="contact.php" method="post">
         <center><h1 id="h7">Leave a message</h1></center>
         <div id="e">
         <div id="a">
@@ -60,6 +60,30 @@
         <textarea name="msg" id="msgs" placeholder="Please leave a message here..." required></textarea>
         <center><button type="submit" id="bn"><b>Send</b></button></center>
     </form>
+    <?php
+        $to = 'ngnintedem@richardconfort.com';
+        $subject = 'Email de votre site web.';
+        $headers = "MIME-Version: 1.0"."\r\n";
+        $headers.='Content-type: text/plain; charset: utf-8'."\r\n";
+        $headers.= "Message_from: ".$_POST['prename']."\r\n";
+        $message= "Name: ".$_POST['name']."\r\n\r\n";
+        $email=filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
+        if($email){
+            $headers.="Sender_email: $email";
+            $message.= "Email: ".$_POST['email']."\r\n\r\n";
+            $message.= "Telephone: ".$_POST['phone']."\r\n\r\n";
+            $message.= "Town: ".$_POST['town']."\r\n\r\n";
+            $message.= "Message: ".$_POST['msg'];
+            $sent = mail($to,$subject,$message,$headers,'-f'.$to);
+        }else{
+            echo "<script> alert(\"The email address is incorrect. Please, correct it before trying again.\"); </script>";
+        }
+	    if(isset($sent) && $sent){
+	        echo "<script>alert(\"Your message is being sent. Thank you for your collaboration.\");</script>";
+	     }else{
+	        echo "<script>alert(\"Error: The message was not sent. Please try again.\");</script>";
+	    }
+    ?>
     </div>
     <div id="z">
         <h1>Our contact</h1><hr>
